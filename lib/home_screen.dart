@@ -1,8 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:turf_booking_admin/add_slot_screen.dart';
 import 'package:turf_booking_admin/model/slot_model.dart';
 // import 'package:turf_booking/profile_screen.dart';
 import 'package:turf_booking_admin/slotinfo_screen.dart';
+import 'package:turf_booking_admin/themes/theme_colors.dart';
 import 'package:turf_booking_admin/widget/timeslot_card.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -95,6 +98,17 @@ class _HomeScreenState extends State<HomeScreen> {
           );
         },
       ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {
+      //     Navigator.push(context,
+      //         MaterialPageRoute(builder: (_) => const AddSlotScreen()));
+      //   },
+      //   backgroundColor: HashColorCodes.green,
+      //   child: const Icon(
+      //     CupertinoIcons.add,
+      //     color: Colors.white,
+      //   ),
+      // ),
     );
   }
 }
